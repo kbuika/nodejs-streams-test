@@ -1,8 +1,8 @@
-const express = require("express");
+const express = require("express")
 
-const router = express.Router();
-const { planWithSubscriptions } = require("../controllers/plan");
+const router = express.Router()
+const { planWithSubscriptions } = require("../controllers/plan")
 
-router.route("/breakdown").get(planWithSubscriptions);
+router.route("/breakdown").get(planWithSubscriptions)
 
-module.exports = router;
+module.exports = router

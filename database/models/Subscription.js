@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose")
 
 const subscriptionSchema = new mongoose.Schema({
   business_id: String,
@@ -9,10 +9,10 @@ const subscriptionSchema = new mongoose.Schema({
     external_id: String,
     name: { type: String, enum: ["Stripe", "Paypal"] },
   },
-});
+})
 
-subscriptionSchema.set("timestamps", true);
+subscriptionSchema.set("timestamps", true)
 
-const Subscription = mongoose.model("Subscriptions", subscriptionSchema);
+const Subscription = mongoose.model("Subscriptions", subscriptionSchema)
 
-module.exports = Subscription;
+module.exports = Subscription

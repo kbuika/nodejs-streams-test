@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose")
 
 const planSchema = new mongoose.Schema({
   name: String,
@@ -12,10 +12,10 @@ const planSchema = new mongoose.Schema({
     streaming: Boolean,
     customize: Boolean,
   },
-});
+})
 
-planSchema.set("timestamps", true);
+planSchema.set("timestamps", true)
 
-const Plan = mongoose.model("Plan", planSchema);
+const Plan = mongoose.model("Plan", planSchema)
 
-module.exports = Plan;
+module.exports = Plan

@@ -1,4 +1,4 @@
-const Plan = require("../database/models/Plan");
+const Plan = require("../database/models/Plan")
 
 exports.planWithSubscriptions = async (req, res) => {
   try {
@@ -21,10 +21,10 @@ exports.planWithSubscriptions = async (req, res) => {
           subscriptionCount: { $size: "$subscriptions" },
         },
       },
-    ]);
+    ])
 
-    res.status(200).json(plansWithSubscriptions);
+    res.status(200).json(plansWithSubscriptions)
   } catch (error) {
-    res.status(500).json({ error: "An error occurred while fetching data" });
+    res.status(500).json({ error: "An error occurred while fetching data" })
   }
-};
+}
