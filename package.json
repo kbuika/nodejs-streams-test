@@ -10,7 +10,7 @@
     "format:check": "prettier --check \"**/*.{js}\"",
     "format:fix": "prettier --write \"**/*.{js}\"",
     "lint:check": "eslint \"**/*.{js}\"",
-    "lint:fix": "eslint --fix \"*.{js}\" "
+    "lint:fix": "eslint --fix \"**/*.{js}\" "
   },
   "keywords": [],
   "author": "",
