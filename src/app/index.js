@@ -15,7 +15,7 @@ app.use(express.json())
 
 // =>Routes
 app.get("/", (req, res) => {
-  res.json("Hello from the server side")
+  res.json("Hey. the '/api/v1/generate/csv' route generates a csv file with subscriptions that cost $50 dollars or more")
 })
 
 app.use(`${base_uri}/generate`, generate)
